@@ -1,0 +1,104 @@
+// Display
+$display: (
+  "flex": flex,
+  "inline-block": inline-block,
+  "block": block,
+);
+
+@each $key, $value in $display {
+  .d-#{$key} {
+    display: $value;
+  }
+}
+//flex direction
+$flex-direction: (
+  "column": column,
+  "row": row,
+);
+
+@each $key, $value in $flex-direction {
+  .direction-#{$key} {
+    flex-direction: $value;
+  }
+}
+
+// flex justify-content
+$flex-content: (
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+);
+
+@each $key, $value in $flex-content {
+  .justify-content-#{$key} {
+    justify-content: $value;
+  }
+}
+//Flex align Item
+$flex-align: (
+  "center": center,
+);
+@each $key, $value in $flex-align {
+  .align-items-#{$key} {
+    align-items: $value;
+  }
+}
+
+// width
+$width: (
+  "5": 5%,
+  "10": 10%,
+  "20": 20%,
+  "30": 30%,
+  "40": 40%,
+  "50": 50%,
+  "100": 100%,
+);
+
+@each $key, $value in $width {
+  .w-#{$key} {
+    width: $value;
+  }
+}
+
+// Text align
+
+$txt: (
+  "center": center,
+  "left": left,
+  "right": right,
+);
+
+@each $key, $value in $txt {
+  .txt-#{$key} {
+    text-align: $value;
+  }
+}
+
+// margin
+$marginXY: (
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "25": 25px,
+  "30": 30px,
+  "40": 40px,
+  "50": 50px,
+);
+
+@each $key, $value in $marginXY {
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+}

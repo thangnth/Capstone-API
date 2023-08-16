@@ -1,0 +1,54 @@
+.btn-red {
+  height: 40px;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: $fs-03;
+  font-weight: 400;
+  color: $color-white-02;
+  border-radius: 6px;
+  background-color: $color-red-01;
+  border: 1px solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-pink-01;
+    color: $color-red-01;
+  }
+}
+
+.btn-qty {
+  height: 25px;
+  width: 25px;
+  padding: 4px 4px;
+  text-align: center;
+  font-size: $fs-03;
+  font-weight: 400;
+  color: $color-white-02;
+  border-radius: 50%;
+  background-color: $color-red-01;
+  border: 1px solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-pink-01;
+    color: $color-red-01;
+  }
+}
+
+.btn-pink {
+  height: 30px;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: $fs-03;
+  font-weight: 400;
+  color: $color-white-02;
+  border-radius: 6px;
+  background-color: $color-red-01;
+  border: 1px solid;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-pink-01;
+    color: $color-red-01;
+  }
+}

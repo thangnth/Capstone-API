@@ -1,0 +1,28 @@
+// Colors
+$color-red-01: #ab4747;
+$color-pink-01: #f6e3ea;
+$color-white-01: #efeced;
+$color-white-02: #fffefd;
+$color-black-01: #1d262b;
+$color-gey-01: #404040;
+
+// Font-weight
+$fw-01: 700;
+$fw-02: 400;
+$fw-03: 300;
+
+//font-size
+$fs-01: 32px;
+$fs-04: 20px;
+$fs-02: 18px;
+$fs-03: 16px;
+
+//breakpoints
+$breakpoints: (
+  "small": 576px,
+  "medium": 768px,
+  "large": 992px,
+  "extra-large": 1200px,
+);
+@include responsive("small") {
+}

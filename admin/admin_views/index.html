@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Management</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../asset/css/main.css" />
+  </head>
+  <body>
+    <header id="header_admin">
+      <div class="container">
+        <div class="header_content">
+          <div class="header_left">
+            <a class="header_logo">
+              <i></i>
+              <span href="">CYBERPHONE</span>
+            </a>
+            <div class="header_navbar">
+              <a id="navbar-home" class="header_item" href="../../home.html">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </a>
+              <a id="navbar-store" class="header_item" href="../../customer/customer_views/index.html">
+                <i class="fa-solid fa-store"></i>
+                <p>Store</p>
+              </a>
+            </div>
+          </div>
+          <div id="header_right">
+            <a class="header_item d-inline-block w-100" href="#">             
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Shooping Card</p></a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="product-list">
+          <div class="container">
+              <div class="d-flex justify-content-between">
+                <h2 class="txt-red-01 w-20" > PRODUCTS LIST</h2>
+                <div class="d-flex justify-content-between w-40 mb-40">
+                  <button id="btn-model-product" class="btn-red"><i class="fa fa-plus mr-1"></i> Add Product</button>
+                  <div class="searchbar">
+                    <form action= ""method="GET" class="search position-relative">
+                      <input id="txtSearch"type="search" class="search_input" name="s" placeholder="Search by name of product.." required="">
+                      <span class="fa fa-search search-icon d-inline-block"></span>
+                  </div>
+              </div>
+              </div>
+              <table type="table" class="w-100">
+                <thead  class="bg-pink-01">
+                  <tr class="">
+                    <th class="">Item No.</th>
+                    <th class="">Product Name</th>
+                    <th class="">Price</th>
+                    <th class="">Photo</th>
+                    <th class="">Description</th>
+                    <th class="">Action</th>
+                </tr>
+                </thead>
+                <tbody id="tbl_product-list"></tbody>
+                <tfooter></tfooter>
+              </table>
+
+          </div>
+          <div class="modal" id="myModal">
+          <div class="modal_content">
+            <!-- Modal Header -->
+            <div class="modal_header mb-10 d-flex justify-content-between">
+              <h4 class="modal_title">ADDING PRODUCT</h4>
+              <button type="button" id="modal-close">
+                x
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Product ID</label>
+                <input
+                  id="PDID"
+                  class="form-control"
+                  placeholder="Product ID"
+                  disabled
+                />
+              </div>
+              <div class="form-group">
+                <label>Product Name</label>
+                <input
+                  id="PDName"
+                  class="form-control"
+                  placeholder="Product Name"
+                />
+              </div>
+              <div class="form-group">
+                <label>Price</label>
+                <input
+                  id="PDPrice"
+                  class="form-control"
+                  placeholder="Price"
+                />
+              </div>
+              <div class="form-group">
+                <label>Photo</label>
+                <input
+                  id="PDImage"
+                  class="form-control"
+                  placeholder="Photo of product"
+                />
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <div class="d-flex justify-content-between">               
+                   <input
+                  id="PDDisplay"
+                  class="form-control description"
+                  placeholder="Display"
+                />
+                <input
+                  id="PDOS"
+                  class="form-control description"
+                  placeholder="OS"
+                />
+                <input
+                  id="PDCamera"
+                  class="form-control description"
+                  placeholder="Camera"
+                />
+                <input
+                  id="PDRAM"
+                  class="form-control description"
+                  placeholder="RAM"
+                />
+                <input
+                  id="PDROM"
+                  class="form-control description"
+                  placeholder="ROM"
+                /></div>
+
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+
+            </div>
+          </div>
+
+          </div>
+      </section>
+    </main>
+    <footer id="footer_admin">
+      <div class="container footer_info">
+         <div class="footer_content">
+            <div class="info_left info_item">
+              <h6>CYBERPHONE</h6>
+              <p>We pride ourselves on our efficiency and hard work, but most of all our ability to source you the best quality and best value products and devices in the market.</p>
+            </div>
+            <div class="info_right info_item">
+              <div class="footer_item">
+                <h6>BRANDS</h6>
+                <a class="brand d-block"href="">Iphone</a>
+                <a class="brand d-block"href="">Samsung</a>
+                <a class="brand d-block"href="">Xiaomi</a>
+                <a class="brand d-block"href="">Oppo</a>
+              </div>
+              <div class="footer_item">
+                <h6>USEFUL LINKS</h6>
+                <a class="brand d-block"href="">Pricing</a>
+                <a class="brand d-block"href="">Settings</a>
+                <a class="brand d-block"href="">Orders</a>
+                <a class="brand d-block"href="">Helps</a>
+             </div>
+              <div class="footer_item">
+                <h6>CONTACTS</h6>
+                <a class="brand d-block fa-solid fa-house"href="#">  Da Nang, Thanh Khe, VN</a>
+                <a class="brand d-block fa-solid fa-envelope"href="#">  Cyberphone@mail.com</a>
+                <a class="brand d-block fa-solid fa-phone"href="#">  +84 12345678</a>
+                <a class="brand d-block fa-solid fa-fax"href="#">  +84 12345678</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- <div class="container footer_copywright"></div> -->
+     
+    </footer>
+    <!-- CDN Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../models/product.js"></script>
+    <script src="../../services/productAPI.js"></script>
+    <script src="../admin_controller/main.js"></script>
+  </body>
+</html>

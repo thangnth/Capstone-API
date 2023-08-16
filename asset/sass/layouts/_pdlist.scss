@@ -1,0 +1,40 @@
+.product-list {
+  padding: 50px 0;
+  #btn-model-product {
+    padding: 10px 20px;
+  }
+  table {
+    background: transparent;
+    border: 1px solid #dee2e6;
+    tr {
+      display: table-row;
+    }
+    td {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+  & form {
+    position: relative;
+    & input {
+      position: absolute;
+      width: 300px;
+      padding: 10px 50px 10px 20px;
+      height: 45px;
+      font-size: $fs-03;
+      color: rgba(22, 28, 45, 0.7);
+      font-weight: 400;
+      border-radius: 6px;
+      right: 0;
+      background-color: white;
+      border: 1px solid rgba(22, 28, 45, 0.7);
+    }
+    & span {
+      color: #404040;
+      position: absolute;
+      right: 20px;
+      font-size: 15px;
+      top: 15px;
+    }
+  }
+}

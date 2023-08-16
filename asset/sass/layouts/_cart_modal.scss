@@ -1,0 +1,56 @@
+.cart-content {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 100%;
+  color: #fff;
+  margin: 5px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 800px;
+  z-index: 2;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #111;
+  display: block;
+  .cart-title {
+    font-size: $fs-04;
+  }
+
+  .cart-body {
+    height: 100%;
+
+    thead {
+      th {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        color: $color-pink-01;
+      }
+    }
+    .purchase {
+      position: absolute;
+      bottom: 10px;
+      margin-top: 10px;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      color: $color-pink-01;
+      text-align: left;
+      .btn {
+        height: 35px;
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  #cart-close {
+    color: #fff;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+  }
+}

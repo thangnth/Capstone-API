@@ -1,0 +1,17 @@
+$colors : (
+"red-01" : #ab4747,
+"pink-01" : #f6e3ea,
+"white-01" : #efeced,
+"white-02": #fffefd,
+"black-01" : #1d262b,
+"grey-01": #404040
+);
+
+@each $key, $value in $colors {
+    .bg-#{$key}{
+        background-color : $value;
+    }
+    .txt-#{$key}{
+        color: $value;
+    }   
+};

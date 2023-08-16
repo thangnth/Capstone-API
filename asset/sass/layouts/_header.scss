@@ -1,0 +1,39 @@
+.display_flex_between_center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    background-color: $color-red-01;
+
+    & .header_content{
+        @extend.display_flex_between_center;
+        padding : 30px 0;
+        
+        & .header_left{
+            @extend.display_flex_between_center;
+            width : 30%;
+            & .header_logo{
+                font-size: $fs-01;
+                font-weight: $fw-02;
+                color: $color-white-02;
+            }
+            }
+        & .header_navbar{
+            @extend.display_flex_between_center;
+            width : 30%;
+        }
+        & .header_item{
+            text-align: center;
+            font-size: $fs-02;
+            font-weight: $fw-02;
+            color: $color-white-02;
+            transition : all 0.3s;
+            &:hover{
+            transform : scale(1.2,1.2);
+            }
+        }   
+    }
+}
+
+

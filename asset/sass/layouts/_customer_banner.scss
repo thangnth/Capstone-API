@@ -1,0 +1,122 @@
+.banner {
+  background: linear-gradient(to right, #ef8bb0, #f6e3ea, #ef8bb0);
+  height: 100vh;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .banner_content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .banner_item {
+      position: relative;
+      flex-shrink: 0;
+      height: 300px;
+      width: 200px;
+      overflow: hidden;
+      background-color: #010101;
+      border-radius: 20px;
+      box-shadow: 0 7px 5px -5px #4d4b4b;
+      transition: 0.5s;
+
+      &:hover {
+        height: 540px;
+        width: 260px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0.5);
+      }
+      &:hover .item_bottom {
+        bottom: 0;
+        height: 280px;
+
+        .product_details {
+          display: block;
+        }
+
+        .purchase {
+          display: block;
+          margin: 5px auto;
+        }
+      }
+
+      .item_header {
+        transform: translateY(0.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 1rem;
+        font-size: 0.8rem;
+        color: #f6e3ea;
+      }
+      .item_body {
+        position: absolute;
+        height: 185px;
+        width: 185px;
+        margin: 0 auto;
+        top: 60px;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+      }
+      img {
+        border-radius: 8px;
+      }
+      .item_bottom {
+        position: absolute;
+        height: 240px;
+        width: 100%;
+        background-color: #2e2f33;
+        border-radius: 20px;
+        padding: 10px 20px;
+        transition: 0.25s;
+        bottom: -200px;
+        transition: 0.25s;
+        .product-name {
+          font-family: "Montserrat", sans-serif;
+          color: $color-pink-01;
+          font-size: 18px;
+          text-align: center;
+          font-weight: 400;
+          margin-bottom: 4px;
+        }
+        .product-details {
+          transform: translateY(10px);
+          font-family: "Montserrat", sans-serif;
+
+          p {
+            font-size: 0.9rem;
+            padding: 5px 0;
+            color: $color-pink-01;
+          }
+        }
+        .purchase {
+          display: none;
+          padding: 10px 0;
+
+          div {
+            color: $color-white-02;
+            margin: 5px auto;
+            font-size: 18px;
+          }
+
+          input {
+            height: 30px;
+            width: 40%;
+            padding: 4px 8px;
+            font-size: $fs-03;
+            font-weight: 400;
+            border-radius: 6px;
+            border: 1px solid;
+          }
+          .btn-add {
+            position: absolute;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+.announce_content{
+        height: 100px;
+        width: 500px;
+        color : $color-gey-01;
+        font-size: $fs-04;
+        background-color: $color-pink-01;
+        text-align: center;
+        position: absolute;
+        top : 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow : 0 0 10px #111;
+}

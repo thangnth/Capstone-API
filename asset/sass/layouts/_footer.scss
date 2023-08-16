@@ -1,0 +1,36 @@
+footer{
+    background-color: $color-red-01;
+    position : relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .footer_content{
+        @extend .display_flex_between_center;
+        & .info_left{
+            width : 20%;
+            color: $color-pink-01;
+            
+        }
+        & h6{
+            font-size: $fs-04;
+            margin-bottom: 16px;
+            color: $color-white-02;
+        }
+        & p{
+            font-size: $fs-03;
+        }
+        & a{
+            font-size: $fs-03;
+            margin-bottom: 16px;
+            color: $color-pink-01;
+        }
+        & .info_right{
+            @extend .display_flex_between_center;
+            width : 60%;
+            & .fa-solid{
+                padding-bottom : 10px;
+            }
+        }
+
+    }
+}
