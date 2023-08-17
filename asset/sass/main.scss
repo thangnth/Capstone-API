@@ -2,9 +2,8 @@
 // helpers
 @import "./helpers/variable";
 @import "./helpers/mixin";
-@import "./helpers/color";
 @import "./helpers/display";
-// Component
+@import "./helpers/grid"; // Component
 @import "./component/button";
 // Layouts
 @import "./layouts/header";

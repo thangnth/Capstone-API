@@ -1,0 +1,14 @@
+@mixin responsive($screen) {
+  @if (map-has-key($map: $breakpoints, $key: $screen)) {
+    $width: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+  else {
+    @warn "it isn't `${$screen}` in $breakpoints";
+  }
+}

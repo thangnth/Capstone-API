@@ -1,31 +1,44 @@
 .cover-page {
-  // background-image: url(../../img/bg-cover.jpg);
   background-color: #ab4747;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  gap: 0px;
 
   .container {
-    width: 60%;
     margin: 0 auto;
+    padding-top: 80px;
     h1 {
-      font-size: 60px;
+      font-size: 50px;
       color: $color-pink-01;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
     .cover-content {
+      //dimention for mobile
+      gap: 35px;
       .cover-item {
         img {
-          width: 300px;
-          height: 300px;
+          width: 100px;
+          height: 100px;
         }
         p {
-          text-decoration: none;
-          color: $color-pink-01;
-          font-size: 30px;
+          font-size: 20px;
         }
+      }
+      @include responsive("medium") {
+        .cover-item {
+          img {
+            width: 300px;
+            height: 300px;
+          }
+          p {
+            font-size: 30px;
+          }
+        }
+      }
+
+      p {
+        text-decoration: none;
+        color: $color-pink-01;
       }
     }
   }

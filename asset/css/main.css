@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Oswald", sans-serif;
 }
 
 .container {
-  margin: auto 110px;
+  width: 100%;
+  padding: 0 100px;
 }
 
 a {
@@ -220,7 +222,200 @@ a {
   margin-right: 50px;
 }
 
-.btn-red, .modal .modal_content .btn-modal {
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-sm-1 {
+  width: 8.3333333333%;
+}
+
+.col-md-1 {
+  width: 8.3333333333%;
+}
+
+.col-lg-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-sm-2 {
+  width: 16.6666666667%;
+}
+
+.col-md-2 {
+  width: 16.6666666667%;
+}
+
+.col-lg-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-sm-3 {
+  width: 25%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-lg-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-sm-4 {
+  width: 33.3333333333%;
+}
+
+.col-md-4 {
+  width: 33.3333333333%;
+}
+
+.col-lg-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-sm-5 {
+  width: 41.6666666667%;
+}
+
+.col-md-5 {
+  width: 41.6666666667%;
+}
+
+.col-lg-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-sm-6 {
+  width: 50%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-sm-7 {
+  width: 58.3333333333%;
+}
+
+.col-md-7 {
+  width: 58.3333333333%;
+}
+
+.col-lg-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-sm-8 {
+  width: 66.6666666667%;
+}
+
+.col-md-8 {
+  width: 66.6666666667%;
+}
+
+.col-lg-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-sm-9 {
+  width: 75%;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+.col-lg-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-sm-10 {
+  width: 83.3333333333%;
+}
+
+.col-md-10 {
+  width: 83.3333333333%;
+}
+
+.col-lg-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-sm-11 {
+  width: 91.6666666667%;
+}
+
+.col-md-11 {
+  width: 91.6666666667%;
+}
+
+.col-lg-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
+.btn-red,
+.modal .modal_content .btn-modal {
   height: 40px;
   padding: 6px 12px;
   text-align: center;
@@ -233,7 +428,8 @@ a {
   transition: all 0.3s;
   cursor: pointer;
 }
-.btn-red:hover, .modal .modal_content .btn-modal:hover {
+.btn-red:hover,
+.modal .modal_content .btn-modal:hover {
   background-color: #f6e3ea;
   color: #ab4747;
 }
@@ -275,7 +471,12 @@ a {
   color: #ab4747;
 }
 
-.display_flex_between_center, footer .footer_content .info_right, footer .footer_content, header .header_content .header_navbar, header .header_content .header_left, header .header_content {
+.display_flex_between_center,
+footer .footer_content .info_right,
+footer .footer_content,
+header .header_content .header_navbar,
+header .header_content .header_left,
+header .header_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -283,6 +484,7 @@ a {
 
 header {
   background-color: #ab4747;
+  width: 100%;
 }
 header .header_content {
   padding: 30px 0;
@@ -611,26 +813,38 @@ footer .footer_content .info_right .fa-solid {
 .cover-page {
   background-color: #ab4747;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  gap: 0px;
 }
 .cover-page .container {
-  width: 60%;
   margin: 0 auto;
+  padding-top: 80px;
 }
 .cover-page .container h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: #f6e3ea;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+.cover-page .container .cover-content {
+  gap: 35px;
 }
 .cover-page .container .cover-content .cover-item img {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 .cover-page .container .cover-content .cover-item p {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .cover-page .container .cover-content .cover-item img {
+    width: 300px;
+    height: 300px;
+  }
+  .cover-page .container .cover-content .cover-item p {
+    font-size: 30px;
+  }
+}
+.cover-page .container .cover-content p {
   text-decoration: none;
   color: #f6e3ea;
-  font-size: 30px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

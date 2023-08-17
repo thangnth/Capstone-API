@@ -1,0 +1,14 @@
+@for $number from 1 to 13 {
+  .col-#{$number} {
+    width: 100% * $number/12;
+  }
+  .col-sm-#{$number} {
+    width: 100% * $number/12;
+  }
+  .col-md-#{$number} {
+    width: 100% * $number/12;
+  }
+  .col-lg-#{$number} {
+    width: 100% * $number/12;
+  }
+}

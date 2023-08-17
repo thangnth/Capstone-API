@@ -1,20 +1,19 @@
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing : border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-font-family: "Oswald", sans-serif;
-}
-
-
-.container{
-    margin : auto 110px;
+html,
+body {
+  font-family: "Oswald", sans-serif;
 }
 
-a{
-    text-decoration: none;
+.container {
+  width: 100%;
+  //   margin: auto 100px;
+  padding: 0 100px;
 }
 
-
-
+a {
+  text-decoration: none;
+}

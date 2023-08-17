@@ -16,3 +16,11 @@ $fs-01: 32px;
 $fs-04: 20px;
 $fs-02: 18px;
 $fs-03: 16px;
+
+// Define $map = $breakpoint
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+);
