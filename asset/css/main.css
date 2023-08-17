@@ -16,54 +16,6 @@ a {
   text-decoration: none;
 }
 
-.bg-red-01 {
-  background-color: #ab4747;
-}
-
-.txt-red-01 {
-  color: #ab4747;
-}
-
-.bg-pink-01 {
-  background-color: #f6e3ea;
-}
-
-.txt-pink-01 {
-  color: #f6e3ea;
-}
-
-.bg-white-01 {
-  background-color: #efeced;
-}
-
-.txt-white-01 {
-  color: #efeced;
-}
-
-.bg-white-02 {
-  background-color: #fffefd;
-}
-
-.txt-white-02 {
-  color: #fffefd;
-}
-
-.bg-black-01 {
-  background-color: #1d262b;
-}
-
-.txt-black-01 {
-  color: #1d262b;
-}
-
-.bg-grey-01 {
-  background-color: #404040;
-}
-
-.txt-grey-01 {
-  color: #404040;
-}
-
 .d-flex {
   display: flex;
 }
@@ -625,6 +577,9 @@ footer .footer_content .info_right .fa-solid {
 .cart-content .cart-body {
   height: 100%;
 }
+.cart-content .cart-body .quantity-annouce {
+  color: #bceea3;
+}
 .cart-content .cart-body thead th {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -651,22 +606,6 @@ footer .footer_content .info_right .fa-solid {
   font-size: 25px;
   background-color: transparent;
   border: none;
-}
-
-.announce_content {
-  height: 100px;
-  width: 500px;
-  color: #404040;
-  font-size: 20px;
-  background-color: #f6e3ea;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #111;
 }
 
 .cover-page {

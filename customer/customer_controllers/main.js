@@ -213,9 +213,15 @@ function quantityDown(productId) {
       let product = response.data;
       let newCarts = carts.map((item) => {
         if (item.id === product.id) {
-          return { ...item, quantity: item.quantity - 1 };
+          let quantity = item.quantity;
+          if (quantity === 1) {
+            getElement(".quantity-annouce").hidden = false;
+            return { ...item };
+          } else {
+            getElement(".quantity-annouce").hidden = true;
+            return { ...item, quantity: item.quantity - 1 };
+          }
         }
-        return item;
       });
       carts = newCarts;
       let htmlCart = carts.map((item, index) => {
@@ -239,9 +245,12 @@ function quantityDown(productId) {
                 <i class="fas fa-chevron-left"></i>
             </button>
              ${item.quantity}
-            <button id="qty-up" class="btn-qty ml-10" onclick="quantityUp()">
+            <button id="qty-up" class="btn-qty ml-10" onclick="quantityUp(${
+              item.id
+            })">
                  <i class="fas fa-chevron-right"></i>
             </button>
+            <p class="quantity-annouce" hidden>Quantity is at least one</p>
         </td>
         <td>
         ${item.quantity * item.price}
@@ -268,6 +277,7 @@ function quantityDown(productId) {
       console.log(error);
     });
 }
+
 //Button - increase quantity in carts
 function quantityUp(productId) {
   apiGetProductsById(productId)
@@ -275,6 +285,7 @@ function quantityUp(productId) {
       let product = response.data;
       let newCarts = carts.map((item) => {
         if (item.id === product.id) {
+          getElement(".quantity-annouce").hidden = true;
           return { ...item, quantity: item.quantity + 1 };
         }
         console.log(item.quantity);
@@ -337,52 +348,6 @@ function quantityUp(productId) {
 }
 
 console.log("carts", carts);
-
-// function clearItem(productId) {
-//   apiGetProductsById(productId)
-//     .then((response) => {
-//       let clearItem = response.data;
-//       let newCarts = carts.filter((item) => {
-//         item.id = clearItem.id;
-//       });
-//       let html = newcarts.map((item) => {
-//         return `
-//         <tr>
-//         <td>${index + 1}</td>
-//         <td>${item.name}</td>
-//         <td>
-//           <img
-//             src="${item.img}"
-//             alt="${item.name}"
-//             width="70px"
-//             height="70px"
-//           />
-//         </td>
-//         <td>${item.price}</td>
-//         <td>
-//            <button id="qty-down" class="btn-qty mr-10" onclick="quantityDown(${
-//              item.id
-//            })">
-//                 <i class="fas fa-chevron-left"></i>
-//             </button>
-//              ${item.quantity}
-//             <button id="qty-up" class="btn-qty ml-10" onclick="quantityUp()">
-//                  <i class="fas fa-chevron-right"></i>
-//             </button>
-//         </td>
-//         <td>
-//         ${item.quantity * item.price}
-//         </td>
-//         <td>
-//         <button class="btn-pink" onclick="clearItem(${item.id})">Clear</button>
-//         </td>
-//       </tr>`;
-//       });
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// }
 
 function clearItem(productId) {
   apiGetProductsById(productId)
