@@ -37,6 +37,7 @@ $flex-content: (
 //Flex align Item
 $flex-align: (
   "center": center,
+  "bottom": bottom,
 );
 @each $key, $value in $flex-align {
   .align-items-#{$key} {
@@ -100,5 +101,8 @@ $marginXY: (
 
   .mr-#{$key} {
     margin-right: $value;
+  }
+  .gap-#{key} {
+    gap: $value;
   }
 }

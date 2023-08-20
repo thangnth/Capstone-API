@@ -3,7 +3,7 @@ function getElement(selector) {
   return document.querySelector(selector);
 }
 // Open form
-document.getElementById("btn-model-product").onclick = () => {
+getElement(".btn-modal-product").onclick = () => {
   // Open form
   document.getElementById("myModal").style.display = "block";
   getElement("#PDID").disabled = true;
@@ -101,7 +101,17 @@ function createProduct() {
     })
     .then((response) => {
       display(response.data);
-      //   ẩn model :
+      // Clear input after display
+      getElement("#PDName").value = "";
+      getElement("#PDDisplay").value = "";
+      getElement("#PDOS").value = "";
+      getElement("#PDPrice").value = "";
+      getElement("#PDCamera").value = "";
+      getElement("#PDRAM").value = "";
+      getElement("#PDROM").value = "";
+      getElement("#PDImage").value = "";
+
+      //   Hide modal after clearing input
       getElement("#myModal").style.display = "none";
     })
     .catch((error) => {

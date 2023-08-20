@@ -1,20 +1,18 @@
 .cart-content {
-  position: absolute;
+  position: fixed;
   top: 5px;
-  right: 5px;
-  height: 100%;
+  right: 10px;
+  bottom: 10px;
   color: #fff;
-  margin: 5px 10px 0 0;
-  display: flex;
-  flex-direction: column;
+  margin: 5px 10px 10px 0;
   background-color: black;
-  width: 800px;
+  width: 50vw;
   z-index: 2;
   text-align: center;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 10px #111;
-  display: block;
+
   .cart-title {
     font-size: $fs-04;
   }
@@ -35,8 +33,8 @@
     }
     .purchase {
       position: absolute;
-      bottom: 10px;
-      margin-top: 10px;
+      bottom: 0;
+      margin-bottom: 10px;
       font-size: 20px;
       font-family: "Montserrat", sans-serif;
       color: $color-pink-01;
@@ -56,5 +54,6 @@
     font-size: 25px;
     background-color: transparent;
     border: none;
+    font-family: "Montserrat", sans-serif;
   }
 }

@@ -21,123 +21,145 @@
     <link rel="stylesheet" href="../../asset/css/main.css" />
   </head>
   <body>
-    <header id="header_admin">
+    <header>
       <div class="container">
-        <div class="header_content">
-          <div class="header_left">
-            <a class="header_logo col-sm-12">
-              <i></i>
+        <div
+          class="header_content d-flex justify-content-between align-items-center"
+        >
+          <!-- header left -->
+          <div class="header_left col-sm-8 d-flex justify-content-between">
+            <!-- Logo -->
+            <div class="header_logo col-sm-6 txt-left">
               <span href="">CYBERPHONE</span>
-            </a>
-            <div class="header_navbar col-sm-12">
-              <a id="navbar-home" class="header_item" href="../../index.html">
+            </div>
+            <!-- Navbar -->
+            <div class="header_navbar d-flex justify-content-around col-sm-6">
+              <a
+                id="navbar-home col-sm-6"
+                class="header_item"
+                href="../../index.html"
+              >
                 <i class="fa-solid fa-house"></i>
                 <p>Home</p>
               </a>
-              <a id="navbar-store" class="header_item" href="#">
-                <i class="fa-solid fa-person"></i>
+              <a
+                id="navbar-store col-sm-6"
+                class="header_item"
+                href="../../customer/customer_views/index.html"
+              >
+                <i class="fa-regular fa-address-book"></i>
                 <p>Contact</p>
               </a>
             </div>
           </div>
-          <div id="header_right" class="col-sm-12">
-            <a class="header_item d-inline-block w-100" id="shopping-cart" href="#">             
-              <i class="fa-solid fa-cart-shopping">&nbsp</i><span id="count-quantity"></span>
-              <p>Shooping Card</p></a>
+          <!-- Header right : shopping cart -->
+          <div id="header_right">
+            <a
+              class="header_item d-inline-block w-100"
+              id="shopping-cart"
+              href="#"
+            >
+              <i class="fa-solid fa-cart-shopping">&nbsp;</i>
+              <!-- Count total quantity -->
+              <span id="count-quantity"></span>
+              <p>Shooping Card</p>
             </a>
           </div>
         </div>
       </div>
     </header>
-    <main>
-        <section class="banner">
-            <div class="container">
-              <div class="banner_content">
-              </div>
-            </div>
-              <!-- Shopping cart Modal -->
-              <div class="modal" id="cart-modal">
-                  <div class="cart-content">
-                      <div class="cart-header d-flex justify-content-between">
-                          <div class="cart-title">
-                                YOUR SHOOPING CART
-                          </div>
-                          <span type="button" class="modal-close" id="cart-close">
-                    x
-                          </span>
-                      </div>
-                      <div class="cart-body">
-                        <p class="quantity-annouce" hidden>Quantity is at least one</p>
-                         <table type="table" class="w-100">
-                            <thead>
-                              <tr>
-                                <th class="w-5">Item No.</th>
-                                <th>Name of Product</th>
-                                <th>Image</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Value</th>
-                                <th></th>
-                              </tr>
-                                                    <!-- Quantity announcement model -->
-         
-                            </thead>  
-                            <tbody id="cart-PDList">   
-                            </tbody>
-                         </table>
-                         <div class="purchase">
-                          <div class="amount">Amount ($): <span id="amount"></span></div>
-                          <div>
-                            <button class="btn buy">Purchase 
-                                <i class="fas fa-credit-card" style="color:#6665dd;"></i>
-                             </button>
-                             <button onclick="clearCart()" class="btn clear">Clear Cart 
-                                <i class="fas fa-trash" style="color:#bb342f;"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
+    <section class="banner">
+      <div
+        class="container banner_content d-flex justify-content-between"
+      ></div>
 
-
-                </div>      
-        </section>
-    </main>
-
-    <footer id="footer_admin">
-      <div class="container footer_info">
-         <div class="footer_content">
-            <div class="info_left info_item">
+      <footer>
+        <div class="container footer_info">
+          <div class="footer_content d-flex justify-content-between">
+            <div class="col-sm-2 info_left info_item">
               <h6>CYBERPHONE</h6>
-              <p>We pride ourselves on our efficiency and hard work, but most of all our ability to source you the best quality and best value products and devices in the market.</p>
+              <p>
+                We pride ourselves on our efficiency and hard work, but most of
+                all our ability to source you the best quality and best value
+                products and devices in the market.
+              </p>
             </div>
-            <div class="info_right info_item">
-              <div class="footer_item">
+            <div class="col-sm-9 d-flex justify-content-between info_item">
+              <div class="col-sm-4 footer_item">
                 <h6>BRANDS</h6>
-                <a class="brand d-block"href="">Iphone</a>
-                <a class="brand d-block"href="">Samsung</a>
-                <a class="brand d-block"href="">Xiaomi</a>
-                <a class="brand d-block"href="">Oppo</a>
+                <a class="brand d-block" href="">Iphone</a>
+                <a class="brand d-block" href="">Samsung</a>
+                <a class="brand d-block" href="">Xiaomi</a>
+                <a class="brand d-block" href="">Oppo</a>
               </div>
-              <div class="footer_item">
+              <div class="col-sm-4 footer_item">
                 <h6>USEFUL LINKS</h6>
-                <a class="brand d-block"href="">Pricing</a>
-                <a class="brand d-block"href="">Settings</a>
-                <a class="brand d-block"href="">Orders</a>
-                <a class="brand d-block"href="">Helps</a>
-             </div>
-              <div class="footer_item">
+                <a class="brand d-block" href="">Pricing</a>
+                <a class="brand d-block" href="">Settings</a>
+                <a class="brand d-block" href="">Orders</a>
+                <a class="brand d-block" href="">Helps</a>
+              </div>
+              <div class="col-sm-4 footer_item">
                 <h6>CONTACTS</h6>
-                <a class="brand d-block fa-solid fa-house"href="#">  Da Nang, Thanh Khe, VN</a>
-                <a class="brand d-block fa-solid fa-envelope"href="#">  Cyberphone@mail.com</a>
-                <a class="brand d-block fa-solid fa-phone"href="#">  +84 12345678</a>
-                <a class="brand d-block fa-solid fa-fax"href="#">  +84 12345678</a>
+                <a class="brand d-block fa-solid fa-house txt-left" href="#">
+                  Da Nang, Thanh Khe, VN</a
+                >
+                <a class="brand d-block fa-solid fa-envelope txt-left" href="#">
+                  Cyberphone@mail.com</a
+                >
+                <a class="brand d-block fa-solid fa-phone txt-left" href="#">
+                  +84 12345678 &nbsp&nbsp&nbsp</a
+                >
+                <a class="brand d-block fa-solid fa-fax txt-left" href="#">
+                  +84 12345678&nbsp&nbsp&nbsp</a
+                >
               </div>
             </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Shopping cart Modal -->
+    <section class="modal" id="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header d-flex justify-content-between">
+          <div class="cart-title">YOUR SHOOPING CART</div>
+          <span type="button" class="modal-close" id="cart-close"> x </span>
+        </div>
+        <div class="cart-body">
+          <p class="quantity-annouce" hidden>Quantity is at least one</p>
+          <table type="table" class="w-100">
+            <thead>
+              <tr>
+                <th class="w-5">Item No.</th>
+                <th>Name of Product</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Value</th>
+                <th></th>
+              </tr>
+              <!-- Quantity announcement -->
+            </thead>
+            <tbody id="cart-PDList"></tbody>
+          </table>
+          <div class="purchase">
+            <div class="amount">Amount ($): <span id="amount"></span></div>
+            <div>
+              <button class="btn buy">
+                Purchase
+                <i class="fas fa-credit-card" style="color: #6665dd"></i>
+              </button>
+              <button onclick="clearCart()" class="btn clear">
+                Clear Cart
+                <i class="fas fa-trash" style="color: #bb342f"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container footer_copywright"></div> 
-     </footer>
+    </section>
+
     <!-- CDN Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../../models/product.js"></script>

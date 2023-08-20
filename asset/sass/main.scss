@@ -1,9 +1,12 @@
-@import "./base/reset";
 // helpers
 @import "./helpers/variable";
 @import "./helpers/mixin";
+@import "./helpers/grid";
 @import "./helpers/display";
-@import "./helpers/grid"; // Component
+
+// reset
+@import "./base/reset";
+// Component
 @import "./component/button";
 // Layouts
 @import "./layouts/header";

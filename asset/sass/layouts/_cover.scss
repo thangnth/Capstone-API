@@ -1,8 +1,6 @@
 .cover-page {
   background-color: #ab4747;
-  height: 100vh;
   text-align: center;
-  gap: 0px;
 
   .container {
     margin: 0 auto;
@@ -11,10 +9,13 @@
       font-size: 50px;
       color: $color-pink-01;
       margin-bottom: 50px;
+      @include responsive("large") {
+        font-size: 60px;
+      }
     }
     .cover-content {
-      //dimention for mobile
-      gap: 35px;
+      width: 50%;
+      margin: 0 auto;
       .cover-item {
         img {
           width: 100px;
@@ -27,11 +28,22 @@
       @include responsive("medium") {
         .cover-item {
           img {
-            width: 300px;
-            height: 300px;
+            width: 150px;
+            height: 150px;
           }
           p {
             font-size: 30px;
+          }
+        }
+      }
+      @include responsive("large") {
+        .cover-item {
+          img {
+            width: 200px;
+            height: 200px;
+          }
+          p {
+            font-size: 40px;
           }
         }
       }

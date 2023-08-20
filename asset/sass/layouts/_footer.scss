@@ -1,36 +1,49 @@
-footer{
-    background-color: $color-red-01;
-    position : relative;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    .footer_content{
-        @extend .display_flex_between_center;
-        & .info_left{
-            width : 20%;
-            color: $color-pink-01;
-            
-        }
-        & h6{
-            font-size: $fs-04;
-            margin-bottom: 16px;
-            color: $color-white-02;
-        }
-        & p{
-            font-size: $fs-03;
-        }
-        & a{
-            font-size: $fs-03;
-            margin-bottom: 16px;
-            color: $color-pink-01;
-        }
-        & .info_right{
-            @extend .display_flex_between_center;
-            width : 60%;
-            & .fa-solid{
-                padding-bottom : 10px;
-            }
-        }
-
+footer {
+  width: 100%;
+  background-color: $color-red-01;
+  padding: 20px;
+  .footer_content {
+    color: $color-pink-01;
+    & h6 {
+      color: $color-white-02;
+      margin-bottom: 12px;
+      font-size: 12px;
+      text-align: center;
+      @include responsive("medium") {
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+      @include responsive("large") {
+        margin-bottom: 18px;
+        font-size: $fs-04;
+      }
     }
+    & p {
+      font-size: 10px;
+      @include responsive("medium") {
+        font-size: 14px;
+      }
+      @include responsive("large") {
+        font-size: $fs-03;
+      }
+    }
+    & a {
+      margin-bottom: 10px;
+      color: $color-pink-01;
+      font-size: 10px;
+      text-align: center;
+      @include responsive("medium") {
+        font-size: 14px;
+      }
+      @include responsive("large") {
+        font-size: $fs-03;
+      }
+    }
+    & .info_right {
+      & a.fa-solid {
+        padding-bottom: 10px;
+        text-align: left;
+      }
+    }
+  }
 }

@@ -1,69 +1,65 @@
 // CSS cho nền modal
 .modal {
-    position : fixed;
-    top: 0;
-    right: 0;
-    bottom : 0;
-    left : 0;
-    width : 100vw;
-    height : 100vh;
-    background : rgba(0,0,0,0.7);
-    z-index: 1;
-    display : none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
 
-    .modal_content{
-        position: absolute;
-        top : 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display : flex;
-        flex-direction: column;
-        background-color: $color-white-01;
-        width : 800px;
-        z-index: 2;
-        // text-align: center;
-        padding : 40px;
-        border-radius: 20px;
-        box-shadow : 0 0 10px #111;
-        display : block;
-
-        .modal_title {
-            font-size: $fs-04;
-        }
-
-        #modal-close{
-            font-size: 30px;
-            font-weight: $fw-01;
-            background-color: transparent;
-            border : none;
-            text-shadow : 0 1px 0 #fff;
-            opacity : 0.5;
-        }
-        .form-group {
-            margin-bottom: 20px;
-            font-size: $fs-03;
-                .form-control{
-                    display: block;
-                    width: 100%;
-                    padding : 10px 10px;
-                    font-size: 16px;
-                    border-radius: 4px;
-                }
-                .description {
-                    width : 19%;
-                }
-            }
-
-        .btn-modal{
-            padding : 6px 12px;
-            float: right;
-            margin: 10px;
-            @extend.btn-red;
-        }
+  .modal_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white-01;
+    width: 80%;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #111;
+    display: block;
+    @include responsive("medium") {
+      padding: 40px;
     }
+    .modal_title {
+      font-size: $fs-04;
+    }
+
+    #modal-close {
+      font-size: 30px;
+      font-weight: $fw-01;
+      background-color: transparent;
+      border: none;
+      text-shadow: 0 1px 0 #fff;
+      opacity: 0.5;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      font-size: $fs-03;
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 16px;
+        border-radius: 4px;
+      }
+      .description {
+        width: 19%;
+      }
+    }
+
+    .btn-modal {
+      padding: 6px 12px;
+      float: right;
+      margin: 10px;
+      @extend.btn-red;
+    }
+  }
 }
-
-
-
-
-
